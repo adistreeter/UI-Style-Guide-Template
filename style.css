@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+* {
+    margin: 0;
+    font-family: Roboto Condensed;
+    /* overflow: hidden; */
+}
+
+.t-break{
+    padding-top: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid skyblue;
+    padding-bottom: 4px;
+}
+
+/* Heading Text */
+.style-guide-heading {
+    grid-area: ui-heading;
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Typography */
+.typography{
+    display: block;
+    width: 300px;
+    grid-area: typography;
+    padding: 0 0 0 30px;
+}
+
+.typoexample{
+    padding-top: 5px;
+    font-family: Karla !important;
+    font-size: 32px !important;
+    font-weight: bold;
+}
+
+.typofontname{
+    font-family: Karla !important;
+    font-size: 24px !important;
+    padding-bottom: 10px;
+}
+
+.typo-h1{
+    font-family: Karla !important;
+    font-size: 32px !important;
+}
+.typo-h2{
+    font-family: Karla !important;
+    font-size: 24px !important;
+}
+
+.typo-h3{
+    font-family: Karla !important;
+    font-size: 20px !important;
+}
+
+.typo-h4{
+    font-family: Karla !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+}
+
+.typo-p{
+    font-family: Karla !important;
+    font-size: 14px !important;
+}
+
+/* GRID */
+.grid-guide{
+    display: block;
+    width: 300px;
+    grid-area: grid-guide;
+    padding: 20px 0 0 30px;
+}
+
+/* Colour Palette */
+.bg-col-1{background-color: #1D2139;}
+.bg-col-2{background-color: #00ADF2;}
+.bg-col-3{background-color: #FF9E1B;}
+
+.col-pal{
+    display: block;
+    width: 300px;
+    grid-area: col-pal;
+    padding: 20px 0 0 30px;
+}
+
+.col-pal-hd{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+.col-pal-td{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+}
+
+.col-pal-txt{
+    color: white;
+}
+
+.col-pal-90{
+    opacity: .9;
+}
+.col-pal-80{
+    opacity: .8;
+}
+.col-pal-70{
+    opacity: .7;
+}
+.col-pal-60{
+    opacity: .6;
+}
+
+/* Buttons */
+.butt-guide{
+    display: block;
+    width: 300px;
+    grid-area: butt-guide;
+    padding: 20px 0 0 30px;
+}
+.butt-grid{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.butt-1-p{
+    padding: 5px 10px;
+    background-color: #1D2139;
+    color: white;
+    text-align: center;
+}
+.butt-1-h{
+    padding: 5px 10px;
+    background-color: #1D2139;
+    color: white;
+    border: 2px solid #00ADF2;
+    text-align: center;
+}
+
+/* Iconography */
+.icon-guide{
+    display: block;
+    width: 300px;
+    grid-area: icon-guide;
+    padding: 20px 0 0 30px;
+}
+
+/* Form Elements */
+
+.form-guide{
+    display: block;
+    width: 300px;
+    grid-area: form-guide;
+    padding: 20px 0 0 30px;
+}
+
+/* Page Wrapper */
+.content-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas:  
+    "ui-heading"
+    "typography"
+    "grid-guide"
+    "col-pal"
+    "butt-guide"
+    "icon-guide"
+    "form-guide"
+    ;
+}
