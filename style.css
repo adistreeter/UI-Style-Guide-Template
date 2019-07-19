@@ -7,6 +7,12 @@
     /* overflow: hidden; */
 }
 
+body{
+    /* width: 100%;
+    margin: auto;
+    align-items: center; */
+}
+
 .t-break{
     padding-top: 10px;
 }
@@ -49,10 +55,11 @@ h2 {
 
 /* Typography */
 .typography{
-    display: block;
+    display: inline-block;
     width: 300px;
     grid-area: typography;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 0;
+    margin: auto;
 }
 
 .typoexample{
@@ -98,7 +105,8 @@ h2 {
     display: block;
     width: 300px;
     grid-area: grid-guide;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 0;
+    margin: auto;
 }
 
 /* Colour Palette */
@@ -110,7 +118,8 @@ h2 {
     display: block;
     width: 300px;
     grid-area: col-pal;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 0;
+    margin: auto;
 }
 
 .col-pal-hd{
@@ -147,7 +156,8 @@ h2 {
     display: block;
     width: 300px;
     grid-area: butt-guide;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 0;
+    margin: auto;
 }
 .butt-grid{
     padding-top: 10px;
@@ -174,7 +184,8 @@ h2 {
     display: block;
     width: 300px;
     grid-area: icon-guide;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 0;
+    margin: auto;
 }
 
 /* Form Elements */
@@ -183,7 +194,8 @@ h2 {
     display: block;
     width: 300px;
     grid-area: form-guide;
-    padding: 20px 0 0 30px;
+    padding: 20px 0 0 0;
+    margin: auto;
 }
 
 /* Page Wrapper */
@@ -200,4 +212,27 @@ h2 {
     "icon-guide"
     "form-guide"
     ;
+}
+
+/* Center grid content */
+.centcont{
+     
+    translate: (50% 50%);
+}
+
+
+/* Desktop Media Query */
+
+@media only screen and (min-width: 600px){
+    .content-wrapper{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:  
+        "ui-heading ui-heading"
+        "typography col-pal"
+        "grid-guide butt-guide"
+        "form-guide icon-guide"
+        ;
+    }
 }
